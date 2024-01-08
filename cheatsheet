@@ -1,0 +1,76 @@
+
+IF ANY CONCEPT IS LAGGING THEN:
+https://www.youtube.com/watch?v=Ez8F0nW6S-w
+
+
+Configure The Git
+git config --global user.name "username"       --config username
+git config --global user.email "email"         --config username
+git config --list                              --Display the config ie username and email
+
+
+Git Status And Git Clone
+git clone url                                  --copy repo in local machine
+git status                                     --return the status
+
+
+
+There are three types of Status:
+untracked                                     --new file and we havent add and commit
+unstaged                                      --we have add but didnt commit
+unchanged                                     --nothing to do
+changed                                       --we havent add and commit
+
+
+Git Add and commit
+git add filename                             --to add specific file
+git add .                                    --to add all file that is changed and untracked
+git commit -m "commit"                       --to add commit
+
+
+upload local repo content to remote repo
+git push [alias] [branch]                      --to add my this repo to alias in branch [branch]
+git remote add aliasName url                   --to create alis 
+git push -u [alias] [branch]                   --save the alis and branch for next time so that we can push localrepo by git push for next time
+
+
+Git INitilization
+git init                                      --to INitilize the git
+
+
+
+Git Branches
+git branch                                     --to list the git branch
+git branch -m oldbranch newbranch              --to rename branch
+git checkout branchname                         --to switch branch
+git checkout -b branchname                     --to create branch
+git branch -d branchname                       --to delete branch
+                                               --remember while deleting branch you should be in another branch
+git diff branchname                            --to compare current branch with branchname
+
+
+Git merge
+git merge branchname                          --this merge current branch with branchname
+Pull Req using Git                            --By making pull request using git
+
+
+git pull
+git pull [alis] [branch]                     --update remote change in local repo
+
+
+
+Undoing Changes
+If You have add Only
+git reset filename                           --reset the add changes that hasnt commit of file filename
+git reset                                    --reset the add changes that hasnt commit of all file
+
+If we comit too
+git reset HEAD~1                             --reset the repo one stage back 
+git reset [comit hash]                       --reset the repo to the comithash
+git reset --hard [comithash]                 --reset the repo to the comit hass reflect edit in our editor too
+git log                                       --to see all the hashes and log
+
+
+
+git fork
+wile contributing to opensource we do fork and its like our own repo and perform all actifity and at last we make pull req using github
